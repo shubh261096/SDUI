@@ -1,0 +1,70 @@
+{
+  "card": {
+    "log_id": "div2_sample_card",
+    "states": [
+      {
+        "state_id": 0,
+        "div": {
+          "items": [
+            {
+              "type": "container",
+              "width": {
+                "type": "match_parent"
+              },
+              "height": {
+                "type": "match_parent"
+              },
+              "items": [
+                {
+                  "type": "image",
+                  "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+                  "width": {
+                    "type": "fixed",
+                    "value": 50
+                  },
+                  "height": {
+                    "type": "fixed",
+                    "value": 50
+                  },
+                  "preload_required": true,
+                  "scale": "fit"
+                },
+                {
+                  "type": "text",
+                  "text": "Hello Server Driven UI ",
+                  "width": {
+                    "type": "match_parent"
+                  },
+                  "action": {
+                    "log_id": "text_click",
+                    "url": "action://click?key=value"
+                  },
+                  "text_alignment_horizontal": "center"
+                }
+              ],
+              "content_alignment_horizontal": "center",
+              "content_alignment_vertical": "center",
+              "background": [
+                {
+                  "type": "solid",
+                  "color": "#ffeeff"
+                }
+              ]
+            }
+          ],
+          "background": [
+            {
+              "color": "#F1EBDC",
+              "type": "solid"
+            }
+          ],
+          "height": {
+            "type": "match_parent"
+          },
+          "orientation": "overlap",
+          "type": "container"
+        }
+      }
+    ]
+  }
+}
